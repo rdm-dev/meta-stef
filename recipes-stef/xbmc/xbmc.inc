@@ -2,7 +2,7 @@ DESCRIPTION = "software media player and entertainment hub"
 
 LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://copying.txt;md5=4cea88e622381d1ad6e43f07c47513b5"
-DEPENDS = "mysql5 libsamplerate0 alsa-lib udev libvorbis boost libass mpeg2dec libmad libmodplug tiff yajl libtinyxml taglib libcdio jasper libmicrohttpd libssh samba rtmpdump libbluray libnfs samba swig-native libxslt libplist shairplay flac"
+DEPENDS = "mysql5 libsamplerate0 alsa-lib udev libvorbis boost libass mpeg2dec libmad libmodplug tiff yajl libtinyxml taglib libcdio jasper libmicrohttpd libssh samba rtmpdump libnfs samba swig-native libxslt libplist shairplay flac"
 DEPENDS_append_mx6 = " virtual/kernel virtual/libgles2 virtual/egl libfslvpuwrap libcec"
 
 INC_PR = "r1"
@@ -43,57 +43,55 @@ do_configure() {
 }
 
 # XBMC plugins requires python modules and dynamically loaded libraries
-RRECOMMENDS_${PN} = " python-stringold \
-                      python-mime \
-                      python-logging \
-                      python-crypt \
-                      python-netclient \
-                      python-threading \
-                      python-elementtree \
-                      python-xml \
-                      python-dbus \
-                      python-html \
-                      python-netserver \
-                      python-zlib \
-                      python-sqlite3 \
-                      python-pydoc \
-                      python-textutils \
-                      python-shell \
-                      python-image \
-                      python-robotparser \
-                      python-compression \ 
-                      python-audio \
-                      python-email \
-                      python-numbers \
-                      python-json \
-                      python-subprocess \
-                      python-xmlrpc \
-                      python-misc \
-                      eglibc-gconv-cp1252 \
-                      libcurl \
-                      libnfs \
-                      rtmpdump \
-                      libbluray \ 
-                      upower \
-                      libmad \
-                      libass \
-                      mpeg2dec \
-                      libcec \
-                      kernel \
-                      eglibc-gconv-ibm850 \
-                      eglibc-gconv-utf-32 \
-                      lirc \
-                      jasper \
-                      libcec \
-                      udev \
-                      alsa-lib \
-                      alsa-dev \
-                      tzdata \
-                      xbmc-pvr-addons \
-		      shairplay \
-                      libvorbis \
-                      flac \
-                    "
+RDEPENDS_${PN} = " python-stringold \
+                   python-mime \
+                   python-logging \
+                   python-crypt \
+                   python-netclient \
+                   python-threading \
+                   python-elementtree \
+                   python-xml \
+                   python-dbus \
+                   python-html \
+                   python-netserver \
+                   python-zlib \
+                   python-sqlite3 \
+                   python-pydoc \
+                   python-textutils \
+                   python-shell \
+                   python-image \
+                   python-robotparser \
+                   python-compression \ 
+                   python-audio \
+                   python-email \
+                   python-numbers \
+                   python-json \
+                   python-subprocess \
+                   python-xmlrpc \
+                   python-misc \
+                   eglibc-gconv-cp1252 \
+                   libcurl \
+                   libnfs \
+                   rtmpdump \
+                   upower \
+                   libmad \
+                   libass \
+                   mpeg2dec \
+                   libcec \
+                   kernel \
+                   eglibc-gconv-ibm850 \
+                   eglibc-gconv-utf-32 \
+                   jasper \
+                   libcec \
+                   udev \
+                   alsa-lib \
+                   alsa-conf \
+                   tzdata \
+                   xbmc-pvr-addons \
+                   shairplay \
+                   libvorbis \
+                   flac \
+                 "
 
 FILES_${PN} += "/imx6 /usr/share/icons/hicolor"
 FILES_${PN}-dbg += " \
