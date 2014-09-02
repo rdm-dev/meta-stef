@@ -10,6 +10,7 @@ INC_PR = "r1"
 SRC_URI = "git://github.com/xbmc-imx6/xbmc.git \
            file://vp8ts.patch \
 	   file://skin.patch \
+	   file://rss.patch \
 	"
 
 S = "${WORKDIR}/git"
