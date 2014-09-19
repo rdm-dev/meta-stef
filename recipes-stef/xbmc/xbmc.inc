@@ -35,6 +35,8 @@ do_configure() {
   #We will use the host java during build because there is no native recipe for full openjdk and jamvm is not able to build xbmc
   export JAVA="/usr/bin/java"
 
+  rm -rf ${S}/addons/service.xbmc.versioncheck
+
   sh bootstrap
   # oe_runconf
   # Call manually configure instead of oe_runconf because of specific prefix /imx6/xbmc...
@@ -72,6 +74,7 @@ RDEPENDS_${PN} = " python-stringold \
                    python-subprocess \
                    python-xmlrpc \
                    python-misc \
+		   python-modules \
                    eglibc-gconv-cp1252 \
                    libcurl \
                    libnfs \
