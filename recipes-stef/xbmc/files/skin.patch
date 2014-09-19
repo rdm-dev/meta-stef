@@ -97,3 +97,15 @@ index f8b2915..b0801fb 100644
          retStatus |= VC_PICTURE;
        } //VPU_DEC_OUTPUT_DIS
  
+diff --git a/addons/skin.confluence/720p/SettingsSystemInfo.xml b/addons/skin.confluence/720p/SettingsSystemInfo.xml
+index b381efd..8ccce22 100644
+--- a/addons/skin.confluence/720p/SettingsSystemInfo.xml
++++ b/addons/skin.confluence/720p/SettingsSystemInfo.xml
+@@ -161,6 +161,7 @@
+ 					<texturenofocus border="5">MenuItemNF.png</texturenofocus>
+ 					<pulseonselect>false</pulseonselect>
+ 					<label>19191</label>
++					<visible>false</visible>
+ 				</control>
+ 			</control>
+ 			<control type="image">
