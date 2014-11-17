@@ -7,7 +7,7 @@ DEPENDS_append_mx6 = " virtual/kernel virtual/libgles2 virtual/egl libfslvpuwrap
 
 INC_PR = "r1"
 
-SRC_URI = "git://github.com/MildePM/xbmc.git;rev=${SRCREV} \
+SRC_URI = "git://github.com/rdm-dev/xbmc.git;rev=${SRCREV} \
            file://vp8ts.patch \
 	   file://rss.patch \
 	"
