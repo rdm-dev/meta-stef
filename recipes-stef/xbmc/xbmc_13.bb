@@ -1,4 +1,4 @@
 require xbmc.inc
-SRCREV="0390e329a4b1dcb773f6812acb897769d6d0237e"
+SRCREV="faf5636b3a3430646e68493623c4cec2c9cc1880"
 
 PR = "${INC_PR}.2"
